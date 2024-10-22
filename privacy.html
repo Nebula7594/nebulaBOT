@@ -4,90 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - NebulaBot</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
             margin: 0;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        header {
-            background: #4CAF50;
+            padding: 0;
+            overflow: hidden;
+            font-family: 'Arial', sans-serif;
             color: white;
-            padding: 10px 20px;
-            text-align: center;
-            border-radius: 5px;
+            background: url('https://media.giphy.com/media/3o7buinLmCqG0Y4I7W/giphy.gif') no-repeat center center fixed;
+            background-size: cover;
+            animation: backgroundAnimation 10s linear infinite;
         }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 0%; }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
         h1, h2 {
-            color: #4CAF50;
+            text-align: center;
         }
+
         ul {
             list-style-type: none;
-            padding-left: 0;
+            padding: 0;
         }
-        ul li {
-            background: #e7f3fe;
-            border-left: 5px solid #4CAF50;
+
+        li {
             margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
         }
+
         footer {
             text-align: center;
             margin-top: 20px;
-            padding: 10px;
-            background: #4CAF50;
-            color: white;
-            border-radius: 5px;
         }
-        .contact {
-            margin-top: 20px;
-            padding: 10px;
-            border: 1px solid #4CAF50;
-            border-radius: 5px;
-            background: #e7f3fe;
+
+        a {
+            color: #00ffcc;
         }
     </style>
 </head>
 <body>
-    <header>
+    <div class="container">
         <h1>Privacy Policy for NebulaBot</h1>
-    </header>
-    <section>
-        <p>Your privacy is important to us. This policy outlines how we handle your personal information.</p>
-        <h2>Information We Collect</h2>
+        <h2>Your Privacy Matters</h2>
+        <p>Your privacy is important to us. We do not collect personal information without your consent.</p>
         <ul>
-            <li>We do not collect personal information without your consent.</li>
-            <li>Data is only used for providing our services.</li>
-            <li>No tracking cookies are used.</li>
+            <li>Your data will only be used for the purpose of providing our services.</li>
+            <li>We do not share your information with third parties.</li>
+            <li>You can request to have your data deleted at any time.</li>
+            <li>We reserve the right to update this policy at any time.</li>
         </ul>
-        <h2>How We Use Your Information</h2>
-        <ul>
-            <li>To improve our services and enhance user experience.</li>
-            <li>To respond to your inquiries and support requests.</li>
-            <li>To ensure compliance with legal obligations.</li>
-        </ul>
-        <h2>Data Security</h2>
-        <ul>
-            <li>We implement appropriate security measures to protect your data.</li>
-            <li>Data is stored securely and access is limited to authorized personnel.</li>
-        </ul>
-        <h2>Your Rights</h2>
-        <ul>
-            <li>You have the right to access your data at any time.</li>
-            <li>You can request to have your data deleted.</li>
-        </ul>
-        <h2>Contact Us</h2>
-        <div class="contact">
-            <p>If you have any questions about this Privacy Policy, feel free to reach out to us on Discord.</p>
-            <p><strong>Join our Discord for support!</strong> <a href="https://discord.gg/jQK4Q6wt" target="_blank">Discord Link</a></p>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 NebulaBot. All Rights Reserved.</p>
-    </footer>
+        <footer>
+            <p>For any questions, please contact us on Discord.</p>
+        </footer>
+    </div>
 </body>
 </html>
