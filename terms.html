@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - NebulaBot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #121212;
+            background: linear-gradient(to right, #121212, #1e1e1e);
             color: #ffffff;
             line-height: 1.6;
             margin: 0;
             padding: 20px;
+            overflow: hidden;
             animation: fadeIn 1s;
         }
 
@@ -24,72 +26,115 @@
             color: #00bcd4;
             text-align: center;
             margin-bottom: 20px;
-            font-size: 2.5em;
+            font-size: 3em;
             text-shadow: 0 0 10px #00bcd4;
+            animation: slideIn 1s;
         }
 
-        p {
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: rgba(30, 30, 30, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 188, 212, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        p, li {
             margin: 15px 0;
             font-size: 1.1em;
             text-align: justify;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        li {
-            background: #1e1e1e;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 10px;
-            transition: background 0.3s;
+            transition: transform 0.3s;
         }
 
         li:hover {
+            transform: scale(1.05);
+            background: rgba(0, 188, 212, 0.2);
+        }
+
+        button {
             background: #00bcd4;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.1em;
+            margin: 10px 2px;
+            transition: background 0.3s, transform 0.3s;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #008c9e;
+            transform: translateY(-3px);
             cursor: pointer;
         }
 
         footer {
             text-align: center;
             margin-top: 30px;
-            font-size: 0.9em;
+            font-size: 1em;
         }
 
         .scrolling-text {
             white-space: nowrap;
             overflow: hidden;
-            box-sizing: border-box;
             animation: scroll 10s linear infinite;
-            font-size: 1.2em;
+            font-size: 1.5em;
             color: #00bcd4;
+            text-align: center;
+            padding: 10px 0;
         }
 
         @keyframes scroll {
             from { transform: translateX(100%); }
             to { transform: translateX(-100%); }
         }
+
+        .image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+            margin: 20px 0;
+            animation: fadeInImage 1s;
+        }
+
+        @keyframes fadeInImage {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
     </style>
 </head>
 <body>
-    <h1>Terms of Service for NebulaBot</h1>
-    <div class="scrolling-text">🚀 Welcome to NebulaBot! 🚀 Enjoy a seamless experience with our service.</div>
-    <p>By using NebulaBot, you agree to the following terms:</p>
-    <ul>
-        <li>You must be 18 years or older to use our services.</li>
-        <li>You agree to use the bot responsibly and within the legal limits of your jurisdiction.</li>
-        <li>NebulaBot is not responsible for any financial losses incurred while using our platform.</li>
-        <li>We reserve the right to update these terms at any time, and you will be notified of significant changes.</li>
-        <li>You are responsible for maintaining the confidentiality of your account and any activity under your account.</li>
-        <li>You agree not to use the bot for any illegal or unauthorized purpose.</li>
-        <li>All transactions made through NebulaBot are final and non-refundable.</li>
-    </ul>
-    <p>If you have any questions, please contact our support team at support@example.com.</p>
-    <footer>
-        <p>&copy; 2024 NebulaBot. All rights reserved.</p>
-    </footer>
+    <div class="container">
+        <h1>Terms of Service for NebulaBot</h1>
+        <div class="scrolling-text">🚀 Welcome to NebulaBot! 🚀 Enjoy a seamless experience with our service.</div>
+        <img src="https://via.placeholder.com/800x400/00bcd4/ffffff?text=NebulaBot+Terms" alt="NebulaBot Terms" class="image">
+        <p>By using NebulaBot, you agree to the following terms:</p>
+        <ul>
+            <li>You must be 18 years or older to use our services.</li>
+            <li>You agree to use the bot responsibly and within the legal limits of your jurisdiction.</li>
+            <li>NebulaBot is not responsible for any financial losses incurred while using our platform.</li>
+            <li>We reserve the right to update these terms at any time, and you will be notified of significant changes.</li>
+            <li>You are responsible for maintaining the confidentiality of your account and any activity under your account.</li>
+            <li>You agree not to use the bot for any illegal or unauthorized purpose.</li>
+            <li>All transactions made through NebulaBot are final and non-refundable.</li>
+        </ul>
+        <p>If you have any questions, please contact us on Discord for support.</p>
+        <footer>
+            <p>&copy; 2024 NebulaBot. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
+
 
