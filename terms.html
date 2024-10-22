@@ -4,81 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terms of Service - NebulaBot</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(to right, #00c6ff, #0072ff);
-            color: white;
-            animation: fadeIn 1s ease-in;
+            background: linear-gradient(to right, #0a0a0a, #282c34);
+            color: #ffffff;
+            animation: fadeIn 1s ease;
         }
-
-        h1, h2 {
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
             text-align: center;
-            margin: 20px 0;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            padding: 50px;
         }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
         }
-
         ul {
-            line-height: 1.8;
+            list-style: none;
+            padding: 0;
         }
-
-        a {
-            color: #00ffcc;
-            text-decoration: none;
-            transition: color 0.3s;
+        li {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            transition: transform 0.3s, background 0.3s;
         }
-
-        a:hover {
-            color: #ffcc00;
+        li:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
         }
-
         footer {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 50px;
             font-size: 0.9em;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Terms of Service for NebulaBot</h1>
+    </header>
+    <main>
         <p>Welcome to NebulaBot! By using our bot, you agree to the following terms:</p>
         <ul>
             <li>You must be 18 years or older to use our services.</li>
             <li>You agree to use the bot responsibly and within the legal limits of your jurisdiction.</li>
             <li>NebulaBot is not responsible for any financial losses incurred while using our platform.</li>
             <li>We reserve the right to update these terms at any time.</li>
-            <li>Any misuse of the bot may result in suspension or termination of your account.</li>
-            <li>You are responsible for keeping your account information secure.</li>
-            <li>Our services are provided "as is" without warranty of any kind.</li>
         </ul>
-        <h2>Contact Us</h2>
-        <p>If you have any questions, please contact us on <a href="https://discord.gg/jQK4Q6wt" target="_blank">Discord</a>.</p>
-    </div>
+        <p>For any questions, please contact us on Discord.</p>
+    </main>
     <footer>
-        <p>&copy; 2024 NebulaBot. All rights reserved.</p>
+        &copy; 2024 NebulaBot. All Rights Reserved.
     </footer>
 </body>
 </html>
